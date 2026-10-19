@@ -1,0 +1,117 @@
+:root{
+    --accent: #B48DCE;
+    --whisper: rgba(180, 141, 206, 0.25)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flavors-regular{
+    font-family: "Flavors", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.barriecito-regular{
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: Garamond, serif;
+    background: #141419;
+    color: #e8e8f0;
+    line-height: 1.6;
+}
+
+header{
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+header h1 span{
+    display: block;
+    line-height: 1.1;
+}
+.nickname{
+    font-size: .75em;
+    color: var(--accent);
+     -webkit-text-stroke: 1px rgba(255, 255, 255, .6)
+}
+
+.tagline{
+    max-width: 640px;
+    font-size: 1.1rem;
+    color: #b0b0c8;
+    margin-bottom: 2rem;
+}
+header nav a {
+    color: var(--accent);
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav a:hover{
+    text-decoration: underline;
+}
+section{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+}
+section h2{
+    font-size: 2rem;
+    font-style: oblique;
+    margin-bottom: 1rem;
+    color: var(--accent);
+    text-shadow: 2px 2px 12px var(--whisper);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, .6)
+}
+section + section{
+    border-top: 2px ridge var(--whisper);
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+.project-card{
+    background: #1f1f24;
+    border: 1px solid var(--whisper);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: background 0.3s ease, border-color 0.3s ease;
+
+}
+.project-card h3{
+    margin-bottom: 0.5rem;
+}
+.project-card:hover{
+    background: #1a1a2e;
+    border: 1px solid var(--accent);
+}
+.tech{
+    font-size: 0.9rem;
+    color: var(--accent);
+    margin: 1rem 0;
+}
+#follow-the-chaos a{
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1.5rem;
+}
+#follow-the-chaos a:hover{
+    text-decoration: underline;
+}
